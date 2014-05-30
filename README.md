@@ -1,0 +1,105 @@
+Tarantool Rocks
+===============
+
+Packages repository for [Tarantool] - efficient NoSQL database and a Lua application server.
+
+The repository contains precisely selected Lua modules which are fully compatible with Tarantool and were approved to use by [Tarantool Team][Tarantool]. Most modules supports both Tarantool 1.5 and Tarantool 1.6, but some may require Tarantool 1.6. Check [the list of available package][Available Packages].
+
+Tarantool CI System automatically builds and publishes RPM and DEB packages for all modules. Please consult [Tarantool] web-site for further information. 
+
+## Prerequsites
+
+ * [Tarantool] 1.5.3-99+ or 1.6.2-24+
+ * [LuaRocks] 2.x
+
+### Install Luarocks
+
+Install [LuaRocks] using your favorite package manager:
+
+```
+apt-get install luarocks
+```
+
+### Configure LuaRocks
+
+Add http://tarantool.github.io/rocks/ to the list of upstream servers:
+
+```shell
+mkdir -p ~/.luarocks/
+cat > ~/.luarocks/config.lua <<EOF
+rocks_servers = {
+    [[http://tarantool.github.io/rocks/]]
+}
+EOF
+```
+
+## Usage
+
+Type `luarocks search <search string>` in shell to search modules in repositories.
+
+Type `luarocks install <modulename>` in shell to install or update module. 
+
+Use ```somevar = require('<modulename>')``` in Tarantool to load `<modulename>` module.
+
+Example:
+
+```bash
+roman@work:~$ luarocks search http
+
+Search results:
+===============
+
+Rockspecs and source rocks:
+---------------------------
+
+http
+   scm-1 (rockspec) - http://tarantool.github.io/rocks/
+
+roman@work:~$ luarocks install http --local
+...
+http scm-1 is now built and installed in /home/roman/.luarocks/ (license: BSD)
+
+roman@work:~$ tarantool
+localhost> client = require('box.http.client')
+---
+...
+localhost> client
+---
+- request: 'function: 0x4107cfa0'
+  post: 'function: 0x4107d090'
+  get: 'function: 0x4107d050'
+...
+```
+
+## Bug Reporting
+
+Open tickets in this repository if you have problems with module packaging.
+In all other cases please use upstream bug trackers.
+
+## Contributing
+
+The repository is moderated by [Tarantool Team][Tarantool]. Please make a pull request with a new ``.rockspec`` file and we will try to review your request quickly.
+
+New modules must satisfy the following necessary but not sufficient conditions:
+
++ Package is compatible with the latest Tarantool version on major platforms
++ Module is maintained and has a public git repository and a bug tracker (e.g. GitHub)
++ Source code is published under an OSI approved open-source license
++ The repository has minimal viable test suite
+
+Tarantool Team tries to maintain high-quality standards to deliver the best experience for our community. 
+If you are not sure how to properly create a new `.rockspec` and/or contribute your module, please [open a ticket][Bug Tracker]. Thanks!
+
+## See Also                                                                                                                                                                                                                                  
+
+* [Available Packages]
+* [Tarantool]
+* [Documentation]                                                                                                                                                                                                                         
+* [LuaRocks]                                                                                                                                                                                                                             
+
+[Tarantool]: http://github.com/tarantool/tarantool
+[LuaRocks]: http://github.com/keplerproject/luarocks
+[Available Packages]: http://tarantool.github.io/rocks/
+[Documentation]: https://github.com/tarantool/http/wiki
+[Bug Tracker]: https://github.com/tarantool/rocks/issues
+

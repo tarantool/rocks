@@ -1,0 +1,18 @@
+commands = {}
+modules = {}
+repository = {
+   http = {
+      ['scm-1'] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
+   queue = {
+      ['scm-1'] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   }
+}
