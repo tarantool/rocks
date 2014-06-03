@@ -1,6 +1,13 @@
 commands = {}
 modules = {}
 repository = {
+   expirationd = {
+      ['scm-1'] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    http = {
       ['scm-1'] = {
          {
