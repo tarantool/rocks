@@ -22,13 +22,13 @@ apt-get install luarocks
 
 ### Configure LuaRocks
 
-Add http://tarantool.github.io/rocks/ to the list of upstream servers:
+Add http://rocks.tarantool.org/ to the list of upstream servers:
 
 ```shell
 mkdir -p ~/.luarocks/
 cat > ~/.luarocks/config.lua <<EOF
 rocks_servers = {
-    [[http://tarantool.github.io/rocks/]]
+    [[http://rocks.tarantool.org/]]
 }
 EOF
 ```
@@ -53,7 +53,7 @@ Rockspecs and source rocks:
 ---------------------------
 
 http
-   scm-1 (rockspec) - http://tarantool.github.io/rocks/
+   scm-1 (rockspec) - http://rocks.tarantool.org/
 
 roman@work:~$ luarocks install http --local
 ...
@@ -99,7 +99,7 @@ If you are not sure how to properly create a new `.rockspec` and/or contribute y
 
 [Tarantool]: http://github.com/tarantool/tarantool
 [LuaRocks]: http://github.com/keplerproject/luarocks
-[Available Packages]: http://tarantool.github.io/rocks/
+[Available Packages]: http://rocks.tarantool.org/
 [Documentation]: https://github.com/tarantool/http/wiki
 [Bug Tracker]: https://github.com/tarantool/rocks/issues
 
