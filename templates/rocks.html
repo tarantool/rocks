@@ -1,0 +1,68 @@
+﻿{% extends "base" %}
+{% block content %}
+<section class="b-lightgray_block b-rocks">
+  <div class="b-block-wrapper">
+    <h2 class="b-section-title">Available rocks</h2>
+    <div class="b-section-text">
+      Lua modules available from this location for use with
+      <a href="http://luarocks.org">LuaRocks</a> :
+    </div>
+    <ul class="b-rock-list">
+      {% for item in page.rockspecs %}
+      <li class="b-rock-list-item b-clearbox">
+        <a href="{{ item.hp_link }}">
+          <div class="b-rock-list-item-ico"></div>
+        </a>
+        <div class="b-rock-list-item-cnt">
+          <div class="b-rock-list-item-head">
+            <div class="b-rock-list-item-download">
+              {{ item.version }}: 
+              <a href="{{ item.rockspec_link }}" class="b-url_w_i p-revert">
+                <span class="b-url_w_i-text">rockspec</span>
+                <i class="b-ico i-download"></i>
+              </a>
+            </div>
+            <h2 class="b-rock-list-item-title">
+              <a href="{{ item.hp_link }}">{{ item.name }}{{ item.text }}</a>
+            </h2>
+          </div>
+          <div class="b-rock-list-item-bottom">
+            <div class="b-rock-list-item-license">{{ item.license }}</div>
+            <ul class="b-rock-sublist">
+              <li class="b-rock-sublist-item">
+                <a href="{{ item.git_link }}" class="b-url_w_i">
+                  <i class="b-ico i-latest"></i>
+                  <span class="b-url_w_i-text">latest sources</span>
+                </a>
+              </li>
+              <li class="b-rock-sublist-item">
+                <a href="{{ item.hp_link }}" class="b-url_w_i">
+                  <i class="b-ico i-project"></i>
+                  <span class="b-url_w_i-text">project homepage</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    <ul class="b-docs_list-footer">
+      <li class="b-docs_list-footer-item">
+        <a href="/manifest">manifest file</a>
+      </li>
+      <li class="b-docs_list-footer-item">
+        <a href="/manifest-5.1">Lua 5.1 manifest file</a> (<a href="/manifest-5.1.zip">zip</a>)
+      </li>
+      <li class="b-docs_list-footer-item">
+        <a href="/manifest-5.2">Lua 5.2 manifest file</a> (<a href="/manifest-5.2.zip">zip</a>)
+      </li>
+      <li class="b-docs_list-footer-item">
+        <a href="/manifest-5.3">Lua 5.3 manifest file</a> (<a href="/manifest-5.3.zip">zip</a>)
+      </li>
+    </ul>
+  </div>
+</section>
+{% endblock %}
+
+{# vim: syntax=htmldjango ts=2 sts=2 sw=2 expandtab #}

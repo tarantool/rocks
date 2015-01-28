@@ -1,88 +1,249 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+﻿
+<!doctype html>
+
 <html>
-<head>
-<title>Available rocks</title>
-<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
-<style>
-body {
-   background-color: white;
-   font-family: "bitstream vera sans", "verdana", "sans";
-   font-size: 14px;
-}
-a {
-   color: #0000c0;
-   text-decoration: none;
-}
-a.pkg {
-   color: black;
-}
-a:hover {
-   text-decoration: underline;
-}
-td.main {
-   border-style: none;
-}
-blockquote {
-   font-size: 12px;
-}
-td.package {
-   background-color: #f0f0f0;
-   vertical-align: top;
-}
-td.spacer {
-   height: 5px;
-}
-td.version {
-   background-color: #d0d0d0;
-   vertical-align: top;
-   text-align: left;
-   padding: 5px;
-   width: 100px;
-}
-p.manifest {
-   font-size: 8px;
-}
-</style>
-</head>
-<body>
-<h1>Available rocks</h1>
-<p>
-Lua modules available from this location for use with <a href="http://www.luarocks.org">LuaRocks</a>:
-</p>
-<table class="main">
-<td class="package">
-<p><a name="expirationd"></a><a href="#expirationd" class="pkg"><b>expirationd</b></a> - Expiration daemon for Tarantool<br/>
-</p><blockquote><p><br/>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link rel="shortcut icon" href="/theme/favicon.ico" />
+    <link rel="stylesheet"    href="/theme/design.css" />
+    <link rel="stylesheet"    href="/theme/pygmentize.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--script src="/js/select.js"></script-->
+    <!--[if lt IE 9]>
+      <script src="scripts/ie8.js"></script>
+      <link rel="stylesheet" href="/theme/new/ie8.css" />
+    <![endif]-->
+    
+    
+    
+  </head>
 
-<font size="-1"><a href="git://github.com/tarantool/expirationd.git">latest sources</a> | <a href="https://github.com/tarantool/expirationd" target="_blank">project homepage</a> | License: Artistic</font></p>
-</blockquote></a></td>
-<td class="version">
-scm-1:&nbsp;<a href="expirationd-scm-1.rockspec">rockspec</a><br/></td></tr>
-<tr><td colspan="2" class="spacer"></td></tr>
-<td class="package">
-<p><a name="http"></a><a href="#http" class="pkg"><b>http</b></a> - Tarantool module for HTTP client/server.<br/>
-</p><blockquote><p><br/>
+  <body class="p-main">
+    <div class="b-wrapper">
+      <!-- HEADER > -->
+      <header class="b-header">
+        <div class="b-header-wrapper">
+          <nav class="b-header_menu">
+            
+  <ul class="b-menu">
+    
+      <li class="b-menu-item">
+        
+        <a href="http://tarantool.org/" class="b-menu-item-url">Overview</a>
+        
+      </li>
+    
+      <li class="b-menu-item">
+        
+        <a href="http://tarantool.org/documentation.html" class="b-menu-item-url">Documentation</a>
+        
+      </li>
+    
+      <li class="b-menu-item">
+        
+        <a href="http://tarantool.org/download.html" class="b-menu-item-url">Downloads</a>
+        
+      </li>
+    
+      <li class="b-menu-item">
+        
+        <a href="http://rocks.tarantool.org" class="b-menu-item-url p-active">Rocks</a>
+        
+      </li>
+    
+  </ul>
 
-<font size="-1"><a href="git://github.com/tarantool/http.git">latest sources</a> | <a href="https://github.com/tarantool/http/" target="_blank">project homepage</a> | License: BSD</font></p>
-</blockquote></a></td>
-<td class="version">
-scm-1:&nbsp;<a href="http-scm-1.rockspec">rockspec</a><br/></td></tr>
-<tr><td colspan="2" class="spacer"></td></tr>
-<td class="package">
-<p><a name="queue-collection"></a><a href="#queue-collection" class="pkg"><b>queue-collection</b></a> - Queue collection for tarantool<br/>
-</p><blockquote><p><br/>
+          </nav>
+        </div>
+      </header>
+      <!-- < HEADER -->
 
-<font size="-1"><a href="git://github.com/tarantool/queue-collection.git">latest sources</a> | <a href="https://github.com/tarantool/queue-collection" target="_blank">project homepage</a> | License: BSD</font></p>
-</blockquote></a></td>
-<td class="version">
-scm-1:&nbsp;<a href="queue-collection-scm-1.rockspec">rockspec</a><br/></td></tr>
-<tr><td colspan="2" class="spacer"></td></tr>
-</table>
-<p class="manifest">
-<a href="manifest">manifest file</a>
-&bull; <a href="manifest-5.1">Lua 5.1 manifest file</a> (<a href="manifest-5.1.zip">zip</a>) 
-&bull; <a href="manifest-5.2">Lua 5.2 manifest file</a> (<a href="manifest-5.2.zip">zip</a>) 
-&bull; <a href="manifest-5.3">Lua 5.3 manifest file</a> (<a href="manifest-5.3.zip">zip</a>) 
-</p>
-</body>
+      <div class="b-content b-clearbox">
+        
+<section class="b-lightgray_block b-rocks">
+  <div class="b-block-wrapper">
+    <h2 class="b-section-title">Available rocks</h2>
+    <div class="b-section-text">
+      Lua modules available from this location for use with
+      <a href="http://luarocks.org">LuaRocks</a> :
+    </div>
+    <ul class="b-rock-list">
+      
+      <li class="b-rock-list-item b-clearbox">
+        <a href="https://github.com/tarantool/expirationd">
+          <div class="b-rock-list-item-ico"></div>
+        </a>
+        <div class="b-rock-list-item-cnt">
+          <div class="b-rock-list-item-head">
+            <div class="b-rock-list-item-download">
+              scm-1: 
+              <a href="expirationd-scm-1.rockspec" class="b-url_w_i p-revert">
+                <span class="b-url_w_i-text">rockspec</span>
+                <i class="b-ico i-download"></i>
+              </a>
+            </div>
+            <h2 class="b-rock-list-item-title">
+              <a href="https://github.com/tarantool/expirationd">expirationd - Expiration daemon for Tarantool</a>
+            </h2>
+          </div>
+          <div class="b-rock-list-item-bottom">
+            <div class="b-rock-list-item-license">License: Artistic</div>
+            <ul class="b-rock-sublist">
+              <li class="b-rock-sublist-item">
+                <a href="git://github.com/tarantool/expirationd.git" class="b-url_w_i">
+                  <i class="b-ico i-latest"></i>
+                  <span class="b-url_w_i-text">latest sources</span>
+                </a>
+              </li>
+              <li class="b-rock-sublist-item">
+                <a href="https://github.com/tarantool/expirationd" class="b-url_w_i">
+                  <i class="b-ico i-project"></i>
+                  <span class="b-url_w_i-text">project homepage</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      
+      <li class="b-rock-list-item b-clearbox">
+        <a href="https://github.com/tarantool/http/">
+          <div class="b-rock-list-item-ico"></div>
+        </a>
+        <div class="b-rock-list-item-cnt">
+          <div class="b-rock-list-item-head">
+            <div class="b-rock-list-item-download">
+              scm-1: 
+              <a href="http-scm-1.rockspec" class="b-url_w_i p-revert">
+                <span class="b-url_w_i-text">rockspec</span>
+                <i class="b-ico i-download"></i>
+              </a>
+            </div>
+            <h2 class="b-rock-list-item-title">
+              <a href="https://github.com/tarantool/http/">http - Tarantool module for HTTP client/server.</a>
+            </h2>
+          </div>
+          <div class="b-rock-list-item-bottom">
+            <div class="b-rock-list-item-license">License: BSD</div>
+            <ul class="b-rock-sublist">
+              <li class="b-rock-sublist-item">
+                <a href="git://github.com/tarantool/http.git" class="b-url_w_i">
+                  <i class="b-ico i-latest"></i>
+                  <span class="b-url_w_i-text">latest sources</span>
+                </a>
+              </li>
+              <li class="b-rock-sublist-item">
+                <a href="https://github.com/tarantool/http/" class="b-url_w_i">
+                  <i class="b-ico i-project"></i>
+                  <span class="b-url_w_i-text">project homepage</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      
+      <li class="b-rock-list-item b-clearbox">
+        <a href="https://github.com/tarantool/queue-collection">
+          <div class="b-rock-list-item-ico"></div>
+        </a>
+        <div class="b-rock-list-item-cnt">
+          <div class="b-rock-list-item-head">
+            <div class="b-rock-list-item-download">
+              scm-1: 
+              <a href="queue-collection-scm-1.rockspec" class="b-url_w_i p-revert">
+                <span class="b-url_w_i-text">rockspec</span>
+                <i class="b-ico i-download"></i>
+              </a>
+            </div>
+            <h2 class="b-rock-list-item-title">
+              <a href="https://github.com/tarantool/queue-collection">queue-collection - Queue collection for tarantool</a>
+            </h2>
+          </div>
+          <div class="b-rock-list-item-bottom">
+            <div class="b-rock-list-item-license">License: BSD</div>
+            <ul class="b-rock-sublist">
+              <li class="b-rock-sublist-item">
+                <a href="git://github.com/tarantool/queue-collection.git" class="b-url_w_i">
+                  <i class="b-ico i-latest"></i>
+                  <span class="b-url_w_i-text">latest sources</span>
+                </a>
+              </li>
+              <li class="b-rock-sublist-item">
+                <a href="https://github.com/tarantool/queue-collection" class="b-url_w_i">
+                  <i class="b-ico i-project"></i>
+                  <span class="b-url_w_i-text">project homepage</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      
+    </ul>
+    <ul class="b-docs_list-footer">
+      <li class="b-docs_list-footer-item">
+        <a href="/manifest">manifest file</a>
+      </li>
+      <li class="b-docs_list-footer-item">
+        <a href="/manifest-5.1">Lua 5.1 manifest file</a> (<a href="/manifest-5.1.zip">zip</a>)
+      </li>
+      <li class="b-docs_list-footer-item">
+        <a href="/manifest-5.2">Lua 5.2 manifest file</a> (<a href="/manifest-5.2.zip">zip</a>)
+      </li>
+      <li class="b-docs_list-footer-item">
+        <a href="/manifest-5.3">Lua 5.3 manifest file</a> (<a href="/manifest-5.3.zip">zip</a>)
+      </li>
+    </ul>
+  </div>
+</section>
+
+      </div>
+    </div>
+
+    <!-- FOOTER > -->
+    <footer class="b-footer">
+      <div class="b-footer-wrapper">
+        <nav class="b-footer_menu">
+          <div class="b-footer-copyright">© 2015 - Tarantool. All right reserved.</div>
+          
+  <ul class="b-menu">
+    
+      <li class="b-menu-item">
+        
+        <a href="http://tarantool.org/" class="b-menu-item-url">Overview</a>
+        
+      </li>
+    
+      <li class="b-menu-item">
+        
+        <a href="http://tarantool.org/documentation.html" class="b-menu-item-url">Documentation</a>
+        
+      </li>
+    
+      <li class="b-menu-item">
+        
+        <a href="http://tarantool.org/download.html" class="b-menu-item-url">Downloads</a>
+        
+      </li>
+    
+      <li class="b-menu-item">
+        
+        <a href="http://rocks.tarantool.org" class="b-menu-item-url p-active">Rocks</a>
+        
+      </li>
+    
+  </ul>
+
+          <div class="b-footer-other">
+            <a href="http://stable.tarantool.org">1.5 web site and downloads</a>
+          </div>
+        </nav>
+      </div>
+    </footer>
+  <!-- < FOOTER -->
+  </body>
 </html>
+
