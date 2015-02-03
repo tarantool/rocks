@@ -6,6 +6,7 @@ import BeautifulSoup as bs
 
 env = {
     'page': {
+        'title': 'Tarantool - Rocks',
         'slug': 'rocks',
         'rockspecs': []
     }
