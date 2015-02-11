@@ -2,13 +2,28 @@
 
 import codecs
 import jinja2
+import docutils.core
 import BeautifulSoup as bs
+
+def fromrst_to_string(objstring):
+    return docutils.core.publish_parts(source=objstring, writer_name='html')['fragment']
 
 env = {
     'page': {
         'title': 'Tarantool - Rocks',
         'slug': 'rocks',
-        'rockspecs': []
+        'rockspecs': [],
+        'content': fromrst_to_string("""
+* Install `LuaRocks <http://luarocks.org>`_
+* :code:`$ mkdir ~/.luarocks`
+* And add next fragment to :code:`~/.luarocks/config.lua` :
+
+  .. code-block:: lua
+
+    rocks_servers = {
+      [[http://rocks.tarantool.org/]]
+    }
+""")
     }
 }
 
@@ -29,5 +44,5 @@ for i in range(len(tds)/3):
         'version' : tds[i * 3 + 1].contents[0][1:-7],
         'rockspec_link' : tds[i * 3 + 1].contents[1].attrs[0][1]
     })
-
+print env
 codecs.open('index.html', 'w', encoding='utf-8').write(envir.get_template('rocks.html').render(**env))

@@ -75,6 +75,31 @@
       Lua modules available from this location for use with
       <a href="http://luarocks.org">LuaRocks</a> :
     </div>
+  </div>
+</section>
+<section class="b-block b-benchmark b-rocks">
+  <div class="b-block-wrapper">
+    <h2 class="b-section-title">How to enable TaranRocks repo</h2>
+    <article class="b-article">
+      <ul>
+<li><p class="first">Install <a class="reference external" href="http://luarocks.org">LuaRocks</a></p>
+</li>
+<li><p class="first"><code>$ mkdir ~/.luarocks</code></p>
+</li>
+<li><p class="first">And add next fragment to <code>~/.luarocks/config.lua</code> :</p>
+<pre class="code lua literal-block">
+<span class="name">rocks_servers</span> <span class="operator">=</span> <span class="punctuation">{</span>
+  <span class="literal string">[[http://rocks.tarantool.org/]]</span>
+<span class="punctuation">}</span>
+</pre>
+</li>
+</ul>
+
+    </article>
+  </div>
+</section>
+<section class="b-lightgray_block b-rocks">
+  <div class="b-block-wrapper">
     <ul class="b-rock-list">
       
       <li class="b-rock-list-item b-clearbox">
