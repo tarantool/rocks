@@ -1456,13 +1456,18 @@ div.b-rock-list-item-ico {
     padding: 0 0 5px;
 }
 .b-rocks article.b-article pre {
-    padding: 0 0 0 20px;
+    padding: 20px 0 20px 20px;
     margin: 0;
 }
-.b-rocks h2.b-section-title {
-    margin: 0 0 20px 0;
+.b-rocks h2.b-section-title,
+.b-downloads h2.b-section-title{
+    margin: 0 0 10px 0;
     font-size: 25px;
 }
+
+/*.b-rocks .b-section-text {
+    font-size: 15px;
+}*/
 
 .b-rocks .b-rock-list {
     padding: 0 0 50px 0;
