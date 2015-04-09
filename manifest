@@ -21,5 +21,12 @@ repository = {
             arch = "rockspec"
          }
       }
+   },
+   shard = {
+      ['scm-1'] = {
+         {
+            arch = "rockspec"
+         }
+      }
    }
 }
