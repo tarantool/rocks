@@ -15,6 +15,13 @@ repository = {
          }
       }
    },
+   pg = {
+      ['scm-1'] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    queue = {
       ['scm-1'] = {
          {
