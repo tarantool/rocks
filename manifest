@@ -15,6 +15,13 @@ repository = {
          }
       }
    },
+   mysql = {
+      ['scm-1'] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    pg = {
       ['scm-1'] = {
          {
