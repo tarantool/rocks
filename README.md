@@ -10,7 +10,7 @@ Tarantool CI System automatically builds and publishes RPM and DEB packages for 
 ## Prerequsites
 
  * [Tarantool] 1.5.3-99+ or 1.6.2-24+
- * [LuaRocks] 2.x
+ * [LuaRocks] 2.1.x
 
 ### Install Luarocks
 
