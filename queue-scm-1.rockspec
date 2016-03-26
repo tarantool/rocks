@@ -5,7 +5,7 @@ source  = {
     branch = 'master',
 }
 description = {
-    summary  = "Queue collection for tarantool",
+    summary  = "A set of persistent in-memory queues",
     homepage = 'https://github.com/tarantool/queue.git',
     license  = 'BSD',
 }
@@ -22,7 +22,7 @@ build = {
         ['queue.abstract.driver.utubettl'] = 'queue/abstract/driver/utubettl.lua',
         ['queue.abstract.driver.fifo']     = 'queue/abstract/driver/fifo.lua',
         ['queue.abstract.driver.utube']    = 'queue/abstract/driver/utube.lua',
-        ['queue']                          = 'queue.lua'
+        ['queue']                          = 'queue/init.lua'
     }
 }
 
