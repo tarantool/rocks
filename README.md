@@ -3,13 +3,15 @@ Tarantool Rocks
 
 Packages repository for [Tarantool] - efficient NoSQL database and a Lua application server.
 
-The repository contains precisely selected Lua modules which are fully compatible with Tarantool and were approved to use by [Tarantool Team][Tarantool]. Most modules supports both Tarantool 1.5 and Tarantool 1.6, but some may require Tarantool 1.6. Check [the list of available package][Available Packages].
+The repository contains precisely selected Lua modules which are fully
+compatible with Tarantool and were approved to use by [Tarantool Team][Tarantool].
+Check [the list of available package][Available Packages].
 
 Tarantool CI System automatically builds and publishes RPM and DEB packages for all modules. Please consult [Tarantool] web-site for further information. 
 
 ## Prerequsites
 
- * [Tarantool] 1.5.3-99+ or 1.6.2-24+
+ * [Tarantool] 1.6.8+ with header files (tarantool and tarantool-dev packages).
  * [LuaRocks] 2.1.x
 
 ### Install Luarocks
@@ -60,7 +62,7 @@ roman@work:~$ luarocks install http --local
 http scm-1 is now built and installed in /home/roman/.luarocks/ (license: BSD)
 
 roman@work:~$ tarantool
-localhost> client = require('box.http.client')
+localhost> client = require('http.client')
 ---
 ...
 localhost> client
@@ -90,16 +92,15 @@ New modules must satisfy the following necessary but not sufficient conditions:
 Tarantool Team tries to maintain high-quality standards to deliver the best experience for our community. 
 If you are not sure how to properly create a new `.rockspec` and/or contribute your module, please [open a ticket][Bug Tracker]. Thanks!
 
-## See Also                                                                                                                                                                                                                                  
+## See Also
 
 * [Available Packages]
 * [Tarantool]
-* [Documentation]                                                                                                                                                                                                                         
-* [LuaRocks]                                                                                                                                                                                                                             
+* [Documentation]
+* [LuaRocks]
 
 [Tarantool]: http://github.com/tarantool/tarantool
 [LuaRocks]: http://github.com/keplerproject/luarocks
 [Available Packages]: http://rocks.tarantool.org/
 [Documentation]: https://github.com/tarantool/http/wiki
 [Bug Tracker]: https://github.com/tarantool/rocks/issues
-
