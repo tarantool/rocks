@@ -1,5 +1,5 @@
 package = 'mrasender'
-version = '1.0.1'
+version = 'scm-1'
 
 source  = {
     url    = 'git://github.com/mailru/mrasender.git';
