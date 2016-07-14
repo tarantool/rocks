@@ -12,27 +12,7 @@ description = {
 dependencies = {
     'lua >= 5.1'
 }
-external_dependencies = {
-    TARANTOOL = {
-        header = "tarantool/module.h"
-    },
-    POSTGRESQL = {
-        header = "postgresql/libpq-fe.h",
-    }
-}
 build = {
-    type = 'builtin',
-    modules = {
-        ['pg.driver'] = {
-            sources = 'pg/driver.c',
-            incdirs = {
-                "$(TARANTOOL_INCDIR)/tarantool",
-                "$(POSTGRESQL_INCDIR)/postgresql"
-            },
-            libdir = "$(POSTGRESQL_LIBDIR)",
-            libraries = "pq"
-        },
-        ['pg.init'] = 'pg/init.lua',
-    }
+    type = 'cmake',
 }
 -- vim: syntax=lua

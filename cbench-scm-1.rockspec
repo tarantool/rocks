@@ -27,27 +27,7 @@ dependencies = {
     'lua >= 5.1';
 }
 
-external_dependencies = {
-    TARANTOOL = {
-        header = 'tarantool/module.h'
-    };
-    MSGPUCK   = {
-        header = 'msgpuck/msgpuck.h'
-    };
-}
-
 build = {
-    type = 'builtin',
-
-    modules = {
-        ['cbench'] = 'cbench/init.lua';
-        ['cbench.bench'] = {
-            incdirs = {
-                '$(TARANTOOL_INCDIR)';
-                '$(MSGPUCK_INCDIR)';
-            };
-            sources = 'cbench/bench.c';
-        }
-    }
+    type = 'cmake',
 }
 -- vim: syntax=lua ts=4 sts=4 sw=4 et
