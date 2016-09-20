@@ -19,7 +19,7 @@ _tmr.push({id: "2284916", type: "pageView", start: (new Date()).getTime()});
    if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); }
 })(document, window);
 </script><noscript><div style="position:absolute;left:-10000px;">
-<img src="//top-fwz1.mail.ru/counter?id=2284916;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" />
+<img src="https://top-fwz1.mail.ru/counter?id=2284916;js=na" style="border:0;" height="1" width="1" alt="Рейтинг@Mail.ru" />
 </div></noscript>
 <!-- //Rating@Mail.ru counter -->
 
