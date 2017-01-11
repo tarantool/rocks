@@ -1,4 +1,4 @@
-package = 'tarantool-prometheus'
+package = 'prometheus'
 version = 'scm-1'
 source  = {
     url    = 'git://github.com/tarantool/prometheus.git',

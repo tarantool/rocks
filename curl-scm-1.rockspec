@@ -1,4 +1,4 @@
-package = 'tarantool-curl'
+package = 'curl'
 version = 'scm-1'
 
 source  = {

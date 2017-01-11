@@ -1,4 +1,4 @@
-package = 'tarantool-gis'
+package = 'gis'
 version = 'scm-1'
 
 source  = {
