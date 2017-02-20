@@ -5,7 +5,7 @@ source  = {
     branch = 'master',
 }
 description = {
-    summary  = "Iterate over box.space and update someting without freezing db",
+    summary  = "Iterate over box.space and make updates without freezing db",
     homepage = 'https://github.com/Mons/tnt-moonwalker.git',
     license  = 'BSD',
 }
