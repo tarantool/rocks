@@ -78,6 +78,13 @@ repository = {
          }
       }
    },
+   moonwalker = {
+      ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    mqtt = {
       ["scm-1"] = {
          {
