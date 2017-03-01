@@ -11,8 +11,8 @@ compatible with Tarantool and were approved to use by the
 Tarantool CI System automatically builds and publishes RPM and DEB packages for
 all these modules.
 
-Check the [list of available Tarantool packages][AvailablePackages] published at
-Tarantool website.
+The list of approved Tarantool packages is published on
+[Tarantool rocks page][RocksPage].
 
 ## Table of contents
 * [Prerequisites](#prerequisites)
@@ -128,12 +128,12 @@ In all other cases, please use upstream bug trackers.
 
 This repository is moderated by the [Tarantool team][Tarantool]. Please make a
 pull request with a new `.rockspec` file, and we will review it and decide on
-including your package in the
-[list of available Tarantool packages][TarantoolRocksList]
-and [official Tarantool images for Docker][TarantoolDocker].
+listing your package on [Tarantool rocks page][TarantoolRocksList]
+and including it in [official Tarantool images][TarantoolDocker] for Docker.
 
 See README in [tarantool/modulekit][ModuleKit] repository for detailed
-instructions on creating and publishing Tarantool modules in Lua and C.
+instructions on creating and publishing Tarantool modules in Lua
+([luakit][Luakit] branch) and C ([ckit][CKit] branch).
 
 We try to maintain high-quality standards to deliver the best experience for our
 community. Here are basic quality requirements for new modules:
@@ -149,16 +149,18 @@ your module, please [open a ticket in this repository][BugTracker]. Thanks!
 
 ## See also
 
-* [List of available Tarantool packages][AvailablePackages]
+* [Tarantool rocks page][RocksPage]
 * [Templates for creating and publishing Tarantool modules][ModuleKit]
 * [Tarantool repository at GitHub][Tarantool]
 * [LuaRocks repository at GitHub][LuaRocks]
 
 [Tarantool]: http://github.com/tarantool/tarantool
-[AvailablePackages]: http://rocks.tarantool.org/
+[RocksPage]: http://rocks.tarantool.org/
 [BugTracker]: http://github.com/tarantool/rocks/issues
 [ModuleKit]: http://github.com/tarantool/modulekit
 [TarantoolRocksList]: http://tarantool.org/rocks.html
 [TarantoolDocker]: http://github.com/tarantool/docker
 [LuaRocks]: http://github.com/keplerproject/luarocks
 [LuaRocksQuickStart]: http://luarocks.org/#quick-start
+[Luakit]: http://github.com/tarantool/modulekit/tree/luakit
+[Ckit]: http://github.com/tarantool/modulekit/tree/ckit
