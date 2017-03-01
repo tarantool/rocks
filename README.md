@@ -1,49 +1,93 @@
-Tarantool Rocks
-===============
+<a href="http://tarantool.org">
+	<img src="https://avatars2.githubusercontent.com/u/2344919?v=2&s=250" align="right">
+</a>
 
-Packages repository for [Tarantool] - efficient NoSQL database and a Lua application server.
+# Tarantool Rocks - a package repository for Tarantool 1.6+
 
-The repository contains precisely selected Lua modules which are fully
-compatible with Tarantool and were approved to use by [Tarantool Team][Tarantool].
-Check [the list of available package][Available Packages].
+This repository contains precisely selected Lua and C modules which are fully
+compatible with Tarantool and were approved to use by the
+[Tarantool team][Tarantool].
 
-Tarantool CI System automatically builds and publishes RPM and DEB packages for all modules. Please consult [Tarantool] web-site for further information. 
+Tarantool CI System automatically builds and publishes RPM and DEB packages for
+all these modules.
 
-## Prerequsites
+Check the [list of available Tarantool packages][AvailablePackages] published at
+Tarantool website.
 
- * [Tarantool] 1.6.8+ with header files (tarantool and tarantool-dev packages).
+## Table of contents
+* [Prerequisites](#prerequisites)
+* [Installing a module from LuaRocks](#installing-a-module-from-luarocks)
+* [Reporting a bug](#reporting-a-bug)
+* [Contributing](#contributing)
+* [See also](#see-also)
+
+## Prerequisites
+ * [Tarantool] 1.6.8+ with header files (`tarantool` and `tarantool-dev`
+   packages).
  * [LuaRocks] 2.1.x
 
-### Install Luarocks
+## Installing a module from LuaRocks
 
-Install [LuaRocks] using your favorite package manager:
+Follow these steps:
 
-```
-apt-get install luarocks
-```
+1. Install LuaRocks.
 
-### Configure LuaRocks
+   For example, on Ubuntu/Debian:
 
-Add http://rocks.tarantool.org/ to the list of upstream servers:
+   ```bash
+   $ sudo apt-get install luarocks
+   ```
+   
+   For a general procedure of installing LuaRocks on a Unix system, see the
+   [LuaRocks Quick Start Guide][LuaRocksQuickStart].
 
-```shell
-mkdir -p ~/.luarocks/
-cat > ~/.luarocks/config.lua <<EOF
-rocks_servers = {
-    [[http://rocks.tarantool.org/]]
-}
-EOF
-```
+2. Add the Tarantool repository to the list of rock servers.
 
-## Usage
+   Put `rocks.tarantool.org` in the file `.luarocks/config.lua`:
 
-Type `luarocks search <search string>` in shell to search modules in repositories.
+   ```bash
+   $ mkdir /usr/bin/luarocks/.luarocks
+   $ echo "rocks_servers = {[[http://rocks.tarantool.org/]]}" >> ~/usr/bin/luarocks/.luarocks/config.lua
+   ```
+   
+Once these steps are complete, you can:
 
-Type `luarocks install <modulename>` in shell to install or update module. 
+* search the repositories with
 
-Use ```somevar = require('<modulename>')``` in Tarantool to load `<modulename>` module.
+  ```bash
+  $ luarocks search module-name
+  ```
 
-Example:
+* add new modules to the local repository with
+
+  ```bash
+  $ luarocks install module-name --local
+  ```
+  
+* load any module with
+
+  ```
+  tarantool> local-name = require('module-name')
+  ```
+
+* search locally for installed Lua or C modules using `package.path` or `package.cpath`
+
+  ```
+  tarantool> package.path
+  ---
+  - ./?.lua;./?/init.lua;/home/user/.luarocks/share/lua/5.1/?.lua;/home/user/.luarocks/share/lua/5.1/?/init.lua;/home/user/.luarocks/share/lua/?.lua;/home/user/.luarocks/share/lua/?/init.lua;/usr/local/share/tarantool/?.lua;/usr/local/share/tarantool/?/init.lua;/usr/share/tarantool/?.lua;/usr/share/tarantool/?/init.lua;/usr/local/share/lua/5.1/?.lua;/usr/local/share/lua/5.1/?/init.lua;/usr/share/lua/5.1/?.lua;/usr/share/lua/5.1/?/init.lua;
+  ...
+  
+  tarantool> package.cpath
+  ---
+  - ./?.so;/home/user/.luarocks/lib/lua/5.1/?.so;/home/user/.luarocks/lib/lua/?.so;/usr/local/lib/x86_64-linux-gnu/tarantool/?.so;/usr/lib/x86_64-linux-gnu/tarantool/?.so;/usr/local/lib/tarantool/?.so;/usr/local/lib/x86_64-linux-gnu/lua/5.1/?.so;/usr/lib/x86_64-linux-gnu/lua/5.1/?.so;/usr/local/lib/lua/5.1/?.so;
+  ...
+  ```
+  
+  **Note:** Question-marks stand for the module name that was specified earlier
+  when saying `require('module-name')`.
+
+For example:
 
 ```bash
 roman@work:~$ luarocks search http
@@ -73,34 +117,48 @@ localhost> client
 ...
 ```
 
-## Bug Reporting
+## Reporting a bug
 
-Open tickets in this repository if you have problems with module packaging.
-In all other cases please use upstream bug trackers.
+If you have problems with module packaging,
+[open a ticket in this repository][BugTracker].
+
+In all other cases, please use upstream bug trackers.
 
 ## Contributing
 
-The repository is moderated by [Tarantool Team][Tarantool]. Please make a pull request with a new ``.rockspec`` file and we will try to review your request quickly.
+This repository is moderated by the [Tarantool team][Tarantool]. Please make a
+pull request with a new `.rockspec` file, and we will review it and decide on
+including your package in the
+[list of available Tarantool packages][TarantoolRocksList]
+and [official Tarantool images for Docker][TarantoolDocker].
 
-New modules must satisfy the following necessary but not sufficient conditions:
+See README in [tarantool/modulekit][ModuleKit] repository for detailed
+instructions on creating and publishing Tarantool modules in Lua and C.
 
-+ Package is compatible with the latest Tarantool version on major platforms
-+ Module is maintained and has a public git repository and a bug tracker (e.g. GitHub)
-+ Source code is published under an OSI approved open-source license
-+ The repository has minimal viable test suite
+We try to maintain high-quality standards to deliver the best experience for our
+community. Here are basic quality requirements for new modules:
 
-Tarantool Team tries to maintain high-quality standards to deliver the best experience for our community. 
-If you are not sure how to properly create a new `.rockspec` and/or contribute your module, please [open a ticket][Bug Tracker]. Thanks!
+* Package is compatible with the latest Tarantool version on major platforms.
+* Module is maintained and has a public git repository and a bug tracker
+  (e.g. GitHub).
+* Source code is published under an OSI approved open-source license.
+* The repository has a minimal viable test suite.
 
-## See Also
+If you feel unsure how to properly create a new `.rockspec` and/or contribute
+your module, please [open a ticket in this repository][BugTracker]. Thanks!
 
-* [Available Packages]
-* [Tarantool]
-* [Documentation]
-* [LuaRocks]
+## See also
+
+* [List of available Tarantool packages][AvailablePackages]
+* [Templates for creating and publishing Tarantool modules][ModuleKit]
+* [Tarantool repository at GitHub][Tarantool]
+* [LuaRocks repository at GitHub][LuaRocks]
 
 [Tarantool]: http://github.com/tarantool/tarantool
+[AvailablePackages]: http://rocks.tarantool.org/
+[BugTracker]: http://github.com/tarantool/rocks/issues
+[ModuleKit]: http://github.com/tarantool/modulekit
+[TarantoolRocksList]: http://tarantool.org/rocks.html
+[TarantoolDocker]: http://github.com/tarantool/docker
 [LuaRocks]: http://github.com/keplerproject/luarocks
-[Available Packages]: http://rocks.tarantool.org/
-[Documentation]: https://github.com/tarantool/http/wiki
-[Bug Tracker]: https://github.com/tarantool/rocks/issues
+[LuaRocksQuickStart]: http://luarocks.org/#quick-start
