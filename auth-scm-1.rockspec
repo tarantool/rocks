@@ -1,7 +1,7 @@
 package = 'auth'
 version = 'scm-1'
 source  = {
-    url    = 'git://github.com/LinnikD/tarantool-auth.git',
+    url    = 'git://github.com/mailru/tarantool-auth.git',
     branch = 'master',
 }
 description = {
