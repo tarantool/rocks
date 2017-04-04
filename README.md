@@ -32,13 +32,22 @@ Follow these steps:
 
 1. Install LuaRocks.
 
-   For example, on Ubuntu/Debian:
+   For example:
 
    ```bash
+   # on Ubuntu/Debian, say this:
    $ sudo apt-get install luarocks
+   
+   # on CentOS/RHEL, install EPEL first:
+   # example for RHEL/CentOS 7 64-Bit
+   $ wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch.rpm
+   $ rpm -ivh epel-release-7-9.noarch.rpm
+   # then install luarocks package:
+   $ yum update 
+   $ yum install luarocks
    ```
    
-   For a general procedure of installing LuaRocks on a Unix system, see the
+   For a general procedure of installing LuaRocks on a Unix system, see
    [LuaRocks Quick Start Guide][LuaRocksQuickStart].
 
 2. Add the Tarantool repository to the list of rock servers.
