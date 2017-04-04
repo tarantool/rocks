@@ -38,8 +38,8 @@ Follow these steps:
    # on Ubuntu/Debian, say this:
    $ sudo apt-get install luarocks
    
-   # on CentOS/RHEL, install EPEL first:
-   # example for RHEL/CentOS 7 64-Bit
+   # on CentOS/RHEL, install EPEL first
+   # (example for RHEL/CentOS 7 64-Bit):
    $ wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch.rpm
    $ rpm -ivh epel-release-7-9.noarch.rpm
    # then install luarocks package:
