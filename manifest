@@ -29,6 +29,13 @@ repository = {
          }
       }
    },
+   dump = {
+      ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    expirationd = {
       ["scm-1"] = {
          {
