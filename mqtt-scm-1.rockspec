@@ -12,14 +12,6 @@ description = {
 dependencies = {
     "lua >= 5.1"
 }
-external_dependencies = {
-    TARANTOOL = {
-            header = "tarantool/module.h"
-    },
-    LIBMOSQUITTO = {
-        header = "mosquitto.h"
-    }
-}
 build = {
     type = "cmake";
     variables = {
