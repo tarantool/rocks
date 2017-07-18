@@ -27,8 +27,8 @@ The list of approved Tarantool packages is published on
 
 **Prerequisites:** [Tarantool] 1.7.4 or higher
 
-With Tarantool versions 1.7.4+, just use Tarantool's native utility `tarantoolctl`.
-There's nothing to set up in this case.
+With Tarantool versions 1.7.4+, just use Tarantool's native utility
+[tarantoolctl]. There's nothing to set up in this case.
 
 You can:
 
@@ -268,3 +268,4 @@ your module, please [open a ticket in this repository][BugTracker]. Thanks!
 [InstallLuaRocksOnMacOS]: https://github.com/luarocks/luarocks/wiki/Installation-instructions-for-Mac-OS-X
 [Luakit]: http://github.com/tarantool/modulekit/tree/luakit
 [Ckit]: http://github.com/tarantool/modulekit/tree/ckit
+[tarantoolctl]: https://tarantool.org/en/doc/1.7/reference/tarantoolctl.html
