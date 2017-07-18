@@ -16,7 +16,7 @@ The list of approved Tarantool packages is published on
 
 ## Table of contents
 * [Managing modules (with Tarantool 1\.7\.4\+)](#managing-modules-with-tarantool-174)
-* [Managing modules (with Tarantool under 1\.7\.4)](#managing-modules-with-tarantool-under-174)
+* [Managing modules (with Tarantool 1\.6\.8\+)](#managing-modules-with-tarantool-168)
 * [Reporting a bug](#reporting-a-bug)
 * [Contributing](#contributing)
 * [See also](#see-also)
@@ -95,15 +95,14 @@ localhost> queue
 ...
 ```
 
-## Managing modules (with Tarantool under 1.7.4)
+## Managing modules (with Tarantool 1.6.8+)
 
 **Limitations:**
- * You cannot add or otherwise manage modules on Mac OS.
- * On other platforms, not all modules can be installed.
+ * Some modules cannot be installed.
 
 **Prerequisites:**
  * [Tarantool] 1.6.8+ with header files (`tarantool` and `tarantool-dev` packages).
- * [LuaRocks] 2.1.x
+ * [LuaRocks] 2.1.x.
 
 First, you need to set up the repository:
 
@@ -122,10 +121,13 @@ First, you need to set up the repository:
    # then install luarocks package:
    $ yum update
    $ yum install luarocks
+
+   # on Mac OS, e.g. using homebrew:
+   $ brew install lua
    ```
 
-   For a general procedure of installing LuaRocks on a Unix system, see
-   [LuaRocks Quick Start Guide][LuaRocksQuickStart].
+   See a general procedure of installing LuaRocks on a
+   [UNIX system][LuaRocksQuickStart] or [Mac OS][InstallLuaRocksOnMacOS].
 
 2. Add the Tarantool repository to the list of rock servers.
 
@@ -263,5 +265,6 @@ your module, please [open a ticket in this repository][BugTracker]. Thanks!
 [TarantoolDocker]: http://github.com/tarantool/docker
 [LuaRocks]: http://github.com/keplerproject/luarocks
 [LuaRocksQuickStart]: http://luarocks.org/#quick-start
+[InstallLuaRocksOnMacOS]: https://github.com/luarocks/luarocks/wiki/Installation-instructions-for-Mac-OS-X
 [Luakit]: http://github.com/tarantool/modulekit/tree/luakit
 [Ckit]: http://github.com/tarantool/modulekit/tree/ckit
