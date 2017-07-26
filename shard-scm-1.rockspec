@@ -10,14 +10,16 @@ description = {
     license  = 'BSD',
 }
 dependencies = {
-    'lua >= 5.1'
+    'lua >= 5.1';
+    'connpool >= 1.1';
 }
 build = {
-    type = 'builtin',
-
-    modules = {
-        ['shard']                          = 'shard.lua'
-    }
+    type = 'cmake';
+    variables = {
+        CMAKE_BUILD_TYPE="RelWithDebInfo";
+        TARANTOOL_INSTALL_LIBDIR="$(LIBDIR)";
+        TARANTOOL_INSTALL_LUADIR="$(LUADIR)";
+    };
 }
 
 -- vim: syntax=lua

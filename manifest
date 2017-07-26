@@ -1,6 +1,13 @@
 commands = {}
 modules = {}
 repository = {
+   authman = {
+      ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    ["avro-schema"] = {
       ["scm-1"] = {
          {
@@ -22,7 +29,7 @@ repository = {
          }
       }
    },
-   curl = {
+   dump = {
       ["scm-1"] = {
          {
             arch = "rockspec"

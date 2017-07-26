@@ -15,31 +15,119 @@ The list of approved Tarantool packages is published on
 [Tarantool rocks page][RocksPage].
 
 ## Table of contents
-* [Prerequisites](#prerequisites)
-* [Installing a module from LuaRocks](#installing-a-module-from-luarocks)
+* [Managing modules (with Tarantool 1\.7\.4\+)](#managing-modules-with-tarantool-174)
+* [Managing modules (with Tarantool 1\.6\.8\+)](#managing-modules-with-tarantool-168)
 * [Reporting a bug](#reporting-a-bug)
 * [Contributing](#contributing)
 * [See also](#see-also)
 
-## Prerequisites
- * [Tarantool] 1.6.8+ with header files (`tarantool` and `tarantool-dev`
-   packages).
- * [LuaRocks] 2.1.x
+## Managing modules (with Tarantool 1.7.4+)
 
-## Installing a module from LuaRocks
+**Limitations:** none
 
-Follow these steps:
+**Prerequisites:** [Tarantool] 1.7.4 or higher
+
+With Tarantool versions 1.7.4+, just use Tarantool's native utility
+[tarantoolctl]. There's nothing to set up in this case.
+
+You can:
+
+* search the modules with
+
+  ```bash
+  $ tarantoolctl rocks search module-name
+  ```
+
+* add new modules locally with
+
+  ```bash
+  $ tarantoolctl rocks install module-name
+  ```
+
+* load any module with
+
+  ```bash
+  tarantool> local-name = require('module-name')
+  ```
+
+**Example:**
+
+```bash
+$ tarantoolctl rocks search queue
+
+Search results:
+===============
+
+Rockspecs and source rocks:
+---------------------------
+
+queue
+   scm-1 (rockspec) - http://rocks.tarantool.org
+
+$ tarantoolctl rocks install queue
+...
+queue scm-1 is now installed in /home/roman/.rocks (license: BSD)
+
+$ tarantool
+localhost> queue = require('queue')
+---
+...
+localhost> queue
+---
+- tube: []
+  stat: []
+  register_driver: 'function: 0x09774998'
+  statistics: 'function: 0x0976d958'
+  driver:
+    fifo:
+      create_space: 'function: 0x0975c370'
+      new: 'function: 0x0975af58'
+    fifottl:
+      create_space: 'function: 0x0975fa60'
+      new: 'function: 0x09761698'
+    utubettl:
+      create_space: 'function: 0x0976c778'
+      new: 'function: 0x0976e3a8'
+    utube:
+      create_space: 'function: 0x09768af8'
+      new: 'function: 0x09768b40'
+  stats: 'function: 0x0976d958'
+...
+```
+
+## Managing modules (with Tarantool 1.6.8+)
+
+**Limitations:**
+ * Some modules cannot be installed.
+
+**Prerequisites:**
+ * [Tarantool] 1.6.8+ with header files (`tarantool` and `tarantool-dev` packages).
+ * [LuaRocks] 2.1.x.
+
+First, you need to set up the repository:
 
 1. Install LuaRocks.
 
-   For example, on Ubuntu/Debian:
+   For example:
 
    ```bash
+   # on Ubuntu/Debian, say this:
    $ sudo apt-get install luarocks
+
+   # on CentOS/RHEL, install EPEL first
+   # (example for RHEL/CentOS 7 64-Bit):
+   $ wget http://dl.fedoraproject.org/pub/epel/7/x86_64/e/epel-release-7-9.noarch.rpm
+   $ rpm -ivh epel-release-7-9.noarch.rpm
+   # then install luarocks package:
+   $ yum update
+   $ yum install luarocks
+
+   # on Mac OS, e.g. using homebrew:
+   $ brew install lua
    ```
-   
-   For a general procedure of installing LuaRocks on a Unix system, see the
-   [LuaRocks Quick Start Guide][LuaRocksQuickStart].
+
+   See a general procedure of installing LuaRocks on a
+   [UNIX system][LuaRocksQuickStart] or [Mac OS][InstallLuaRocksOnMacOS].
 
 2. Add the Tarantool repository to the list of rock servers.
 
@@ -49,21 +137,21 @@ Follow these steps:
    $ mkdir /usr/bin/luarocks/.luarocks
    $ echo "rocks_servers = {[[http://rocks.tarantool.org/]]}" >> ~/usr/bin/luarocks/.luarocks/config.lua
    ```
-   
-Once these steps are complete, you can:
 
-* search the repositories with
+Now you can:
+
+* search the modules with
 
   ```bash
   $ luarocks search module-name
   ```
 
-* add new modules to the local repository with
+* add new modules locally with
 
   ```bash
   $ luarocks install module-name --local
   ```
-  
+
 * load any module with
 
   ```
@@ -77,20 +165,20 @@ Once these steps are complete, you can:
   ---
   - ./?.lua;./?/init.lua;/home/user/.luarocks/share/lua/5.1/?.lua;/home/user/.luarocks/share/lua/5.1/?/init.lua;/home/user/.luarocks/share/lua/?.lua;/home/user/.luarocks/share/lua/?/init.lua;/usr/local/share/tarantool/?.lua;/usr/local/share/tarantool/?/init.lua;/usr/share/tarantool/?.lua;/usr/share/tarantool/?/init.lua;/usr/local/share/lua/5.1/?.lua;/usr/local/share/lua/5.1/?/init.lua;/usr/share/lua/5.1/?.lua;/usr/share/lua/5.1/?/init.lua;
   ...
-  
+
   tarantool> package.cpath
   ---
   - ./?.so;/home/user/.luarocks/lib/lua/5.1/?.so;/home/user/.luarocks/lib/lua/?.so;/usr/local/lib/x86_64-linux-gnu/tarantool/?.so;/usr/lib/x86_64-linux-gnu/tarantool/?.so;/usr/local/lib/tarantool/?.so;/usr/local/lib/x86_64-linux-gnu/lua/5.1/?.so;/usr/lib/x86_64-linux-gnu/lua/5.1/?.so;/usr/local/lib/lua/5.1/?.so;
   ...
   ```
-  
+
   **Note:** Question-marks stand for the module name that was specified earlier
   when saying `require('module-name')`.
 
-For example:
+**Example:**
 
 ```bash
-roman@work:~$ luarocks search http
+$ luarocks search queue
 
 Search results:
 ===============
@@ -98,22 +186,37 @@ Search results:
 Rockspecs and source rocks:
 ---------------------------
 
-http
-   scm-1 (rockspec) - http://rocks.tarantool.org/
+queue
+   scm-1 (rockspec) - http://rocks.tarantool.org
 
-roman@work:~$ luarocks install http --local
+$ luarocks install queue --local
 ...
-http scm-1 is now built and installed in /home/roman/.luarocks/ (license: BSD)
+queue scm-1 is now built and installed in /home/roman/.luarocks/ (license: BSD)
 
-roman@work:~$ tarantool
-localhost> client = require('http.client')
+$ tarantool
+localhost> queue = require('queue')
 ---
 ...
-localhost> client
+localhost> queue
 ---
-- request: 'function: 0x4107cfa0'
-  post: 'function: 0x4107d090'
-  get: 'function: 0x4107d050'
+- tube: []
+  stat: []
+  register_driver: 'function: 0x09774998'
+  statistics: 'function: 0x0976d958'
+  driver:
+    fifo:
+      create_space: 'function: 0x0975c370'
+      new: 'function: 0x0975af58'
+    fifottl:
+      create_space: 'function: 0x0975fa60'
+      new: 'function: 0x09761698'
+    utubettl:
+      create_space: 'function: 0x0976c778'
+      new: 'function: 0x0976e3a8'
+    utube:
+      create_space: 'function: 0x09768af8'
+      new: 'function: 0x09768b40'
+  stats: 'function: 0x0976d958'
 ...
 ```
 
@@ -162,5 +265,7 @@ your module, please [open a ticket in this repository][BugTracker]. Thanks!
 [TarantoolDocker]: http://github.com/tarantool/docker
 [LuaRocks]: http://github.com/keplerproject/luarocks
 [LuaRocksQuickStart]: http://luarocks.org/#quick-start
+[InstallLuaRocksOnMacOS]: https://github.com/luarocks/luarocks/wiki/Installation-instructions-for-Mac-OS-X
 [Luakit]: http://github.com/tarantool/modulekit/tree/luakit
 [Ckit]: http://github.com/tarantool/modulekit/tree/ckit
+[tarantoolctl]: https://tarantool.org/en/doc/1.7/reference/tarantoolctl.html
