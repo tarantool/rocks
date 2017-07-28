@@ -38,7 +38,7 @@ You can:
   $ tarantoolctl rocks search module-name
   ```
 
-* add new modules locally with
+* install new modules to the current directory with
 
   ```bash
   $ tarantoolctl rocks install module-name
@@ -146,7 +146,7 @@ Now you can:
   $ luarocks search module-name
   ```
 
-* add new modules locally with
+* install new modules locally with
 
   ```bash
   $ luarocks install module-name --local
