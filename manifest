@@ -148,6 +148,13 @@ repository = {
          }
       }
    },
+   smtp = {
+      ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    tradeparser = {
       ["scm-1"] = {
          {
