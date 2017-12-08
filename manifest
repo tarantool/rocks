@@ -71,6 +71,13 @@ repository = {
          }
       }
    },
+   lulpeg = {
+      ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    memcached = {
       ["scm-1"] = {
          {
