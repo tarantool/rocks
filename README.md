@@ -258,7 +258,7 @@ your module, please [open a ticket in this repository][BugTracker]. Thanks!
 * [LuaRocks repository at GitHub][LuaRocks]
 
 [Tarantool]: http://github.com/tarantool/tarantool
-[RocksPage]: http://rocks.tarantool.org/
+[RocksPage]: https://tarantool.org/en/download/rocks.html
 [BugTracker]: http://github.com/tarantool/rocks/issues
 [ModuleKit]: http://github.com/tarantool/modulekit
 [TarantoolRocksList]: http://tarantool.org/rocks.html
