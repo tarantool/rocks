@@ -30,6 +30,11 @@ repository = {
       }
    },
    document = {
+      ["1.0.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
@@ -58,6 +63,13 @@ repository = {
       }
    },
    gperftools = {
+      ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
+   graphite = {
       ["scm-1"] = {
          {
             arch = "rockspec"
@@ -135,6 +147,11 @@ repository = {
       }
    },
    prometheus = {
+      ["1.0.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"

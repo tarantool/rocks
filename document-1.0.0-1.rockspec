@@ -1,9 +1,9 @@
 package = 'document'
-version = 'scm-1'
+version = '1.0.0-1'
 
 source  = {
     url    = 'git://github.com/tarantool/document.git';
-    branch = 'master';
+    tag = '1.0.0';
 }
 
 description = {
