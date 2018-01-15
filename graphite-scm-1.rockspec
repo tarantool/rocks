@@ -15,7 +15,7 @@ dependencies = {
 build = {
     type = 'builtin';
     modules = {
-        ['graphite'] = 'graphite.lua';
+        ['graphite'] = 'graphite/init.lua';
     }
 }
 -- vim: syntax=lua ts=4 sts=4 sw=4 et
