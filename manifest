@@ -196,6 +196,13 @@ repository = {
          }
       }
    },
+   watchdog = {
+      ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    zookeeper = {
       ["scm-1"] = {
          {
