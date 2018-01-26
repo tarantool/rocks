@@ -9,6 +9,11 @@ repository = {
       }
    },
    ["avro-schema"] = {
+      ["2.0.1-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
@@ -23,6 +28,11 @@ repository = {
       }
    },
    connpool = {
+      ["1.1.1-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
@@ -54,6 +64,11 @@ repository = {
       }
    },
    expirationd = {
+      ["1.0.1-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
@@ -61,6 +76,11 @@ repository = {
       }
    },
    gis = {
+      ["1.0.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
@@ -68,6 +88,11 @@ repository = {
       }
    },
    gperftools = {
+      ["1.0.1-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
@@ -87,6 +112,11 @@ repository = {
       }
    },
    http = {
+      ["1.0.1-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
@@ -101,6 +131,11 @@ repository = {
       }
    },
    memcached = {
+      ["1.0.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
@@ -129,6 +164,11 @@ repository = {
       }
    },
    mqtt = {
+      ["1.2.1-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
@@ -143,6 +183,11 @@ repository = {
       }
    },
    mysql = {
+      ["2.0.1-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
@@ -150,6 +195,11 @@ repository = {
       }
    },
    pg = {
+      ["2.0.1-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
@@ -169,6 +219,11 @@ repository = {
       }
    },
    queue = {
+      ["1.0.2-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
@@ -184,6 +239,13 @@ repository = {
    },
    smtp = {
       ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
+   ["tarantool-curl"] = {
+      ["2.3.1-1"] = {
          {
             arch = "rockspec"
          }
