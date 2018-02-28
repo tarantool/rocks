@@ -140,6 +140,13 @@ repository = {
          }
       }
    },
+   ["lrexlib-pcre"] = {
+      ["2.9.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    lulpeg = {
       ["scm-1"] = {
          {
