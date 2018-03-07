@@ -152,6 +152,13 @@ repository = {
          }
       }
    },
+   ["lua-term"] = {
+      ["0.7-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    lulpeg = {
       ["0.1.0-1"] = {
          {
