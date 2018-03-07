@@ -1,6 +1,13 @@
 commands = {}
 modules = {}
 repository = {
+   argparse = {
+      ["0.5.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    authman = {
       ["scm-1"] = {
          {
