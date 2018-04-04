@@ -301,6 +301,16 @@ repository = {
       }
    },
    shard = {
+      ["1.2-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
+      ["2.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
