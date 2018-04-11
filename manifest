@@ -167,6 +167,13 @@ repository = {
          }
       }
    },
+   ldecnumber = {
+      ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    ["lrexlib-pcre"] = {
       ["2.9.0-1"] = {
          {

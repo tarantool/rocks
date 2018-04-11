@@ -1,10 +1,10 @@
 package = 'ldecnumber'
 
-version = 'scm-1'
+version = '1.0.0'
 
 source  = {
-    url    = 'git://github.com/tarantool/ldecnumber.git';
-    branch = 'master';
+    url = 'git://github.com/tarantool/ldecnumber.git';
+    tag = '1.0.0';
 }
 
 description = {
