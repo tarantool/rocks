@@ -191,6 +191,13 @@ repository = {
          }
       }
    },
+   ["lrexlib-pcre2"] = {
+      ["2.9.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    ["lua-term"] = {
       ["0.7-1"] = {
          {
