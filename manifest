@@ -78,6 +78,13 @@ repository = {
          }
       }
    },
+   date = {
+      ["2.1.2-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    document = {
       ["1.0.0-1"] = {
          {
