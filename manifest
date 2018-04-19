@@ -88,6 +88,13 @@ repository = {
          }
       }
    },
+   ["cron-parser"] = {
+      ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    date = {
       ["2.1.2-1"] = {
          {
@@ -340,11 +347,6 @@ repository = {
             arch = "rockspec"
          }
       },
-      ["2.1-1"] = {
-         {
-            arch = "rockspec"
-         }
-      },
       ["scm-1"] = {
          {
             arch = "rockspec"
@@ -358,6 +360,11 @@ repository = {
          }
       },
       ["2.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
+      ["2.1-1"] = {
          {
             arch = "rockspec"
          }
