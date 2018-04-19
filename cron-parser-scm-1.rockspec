@@ -14,7 +14,7 @@ description = {
     cron-format schedule and calculates the nearest event date.
     ]],
     homepage = 'https://github.com/tarantool/cron-parser',
-    maintainer = 'Michael Siomkin <msiomkin@mail.ru>',
+    maintainer = 'Michael Siomkin <msiomkin@mail.ru>, Yaroslav Dynnikov <yaroslav.dynnikov@gmail.com>',
     license = 'Apache 2.0'
 }
 
