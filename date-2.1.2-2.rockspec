@@ -1,10 +1,9 @@
 package = "date"
-
-version = "2.1.2-1"
+version = "2.1.2-2"
 
 source = {
-   url = "git://github.com/tarantool/date.git",
-   tag = "2.1.2",
+   url = "https://github.com/Tieske/date/archive/version_2.1.2.tar.gz",
+   dir = "date-version_2.1.2",
 }
 
 description = {
@@ -15,7 +14,7 @@ description = {
       ISO 8601 dates, local time support, strftime-like formatting.
    ]],
    license = "MIT",
-   homepage = "https://github.com/tarantool/date",
+   homepage = "https://github.com/Tieske/date",
 }
 
 dependencies = {
@@ -28,3 +27,4 @@ build = {
       date = "date.lua"
    }
 }
+
