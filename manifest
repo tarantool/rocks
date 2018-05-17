@@ -411,6 +411,13 @@ repository = {
          }
       }
    },
+   vshard = {
+      ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    watchdog = {
       ["1.0.0-1"] = {
          {
