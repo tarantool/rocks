@@ -29,7 +29,7 @@ build = {
             sources = {'ccronexpr/ccronexpr.c'},
             incdirs = {'ccronexpr'},
         },
-        ['cron.parser'] = 'cron-parser.lua',
+        ['cron.init'] = 'cron-parser.lua',
     }
 }
 
