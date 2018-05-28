@@ -23,7 +23,6 @@ description = {
 }
 
 dependencies = {
-    'tarantool';
     'lua == 5.1';
 }
 
