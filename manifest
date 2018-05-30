@@ -211,6 +211,18 @@ repository = {
          }
       }
    },
+   ["icu-date"] = {
+      ["1.1.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
+      ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    ldecnumber = {
       ["1.0.0-1"] = {
          {
