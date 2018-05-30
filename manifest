@@ -99,6 +99,11 @@ repository = {
          {
             arch = "rockspec"
          }
+      },
+      ["2.0.1-1"] = {
+         {
+            arch = "rockspec"
+         }
       }
    },
    connpool = {
