@@ -15,8 +15,8 @@ description = {
 
 dependencies = {
     'lua >= 5.1',
-    'expirationd'
-    'checks >= 2.0.0'
+    'expirationd',
+    'checks >= 2.0.0',
 }
 
 build = {
