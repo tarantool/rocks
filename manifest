@@ -454,6 +454,13 @@ repository = {
          }
       }
    },
+   stat = {
+      ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    ["tarantool-curl"] = {
       ["2.3.1-1"] = {
          {
