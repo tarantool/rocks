@@ -3,9 +3,9 @@ modules = {}
 repository = {
    argon2 = {
       ["3.0.1-1"] = {
-          {
-             arch = "rockspec"
-          }
+         {
+            arch = "rockspec"
+         }
       }
    },
    argparse = {
@@ -503,6 +503,11 @@ repository = {
             arch = "rockspec"
          }
       },
+      ["0.1.4-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
@@ -539,4 +544,3 @@ repository = {
       }
    }
 }
--- vim: syntax=lua
