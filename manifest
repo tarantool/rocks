@@ -472,6 +472,11 @@ repository = {
       }
    },
    stat = {
+      ["0.3.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
