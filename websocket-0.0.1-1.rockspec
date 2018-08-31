@@ -3,7 +3,7 @@ version = "0.0.1-1"
 
 source = {
     url = "git://github.com/tarantool/websocket.git",
-    tag = '0.1.1',
+    tag = '0.0.1',
 }
 
 description = {
