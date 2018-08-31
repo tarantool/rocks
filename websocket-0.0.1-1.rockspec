@@ -4,10 +4,14 @@ version = "0.0.1-1"
 source = {
     url = "git://github.com/tarantool/websocket.git",
 <<<<<<< HEAD
+<<<<<<< HEAD
     tag = '0.0.1',
 =======
     branch = '0.1.1',
 >>>>>>> websocket: 0.0.1
+=======
+    tag = '0.1.1',
+>>>>>>> websocket: fixed rockspec
 }
 
 description = {
