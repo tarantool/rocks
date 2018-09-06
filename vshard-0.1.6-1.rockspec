@@ -9,6 +9,9 @@ description = {
     homepage = 'https://github.com/tarantool/vshard.git',
     license  = 'BSD',
 }
+dependencies = {
+    'lua >= 5.1';
+}
 external_dependencies = {
     TARANTOOL = {
         header = 'tarantool/module.h';
