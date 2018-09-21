@@ -1,5 +1,5 @@
 package = "lulpeg"
-version = "scm-1"
+version = "scm-3"
 
 source = {
   url = "git://github.com/tarantool/LuLPeg",
