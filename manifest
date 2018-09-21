@@ -329,16 +329,16 @@ repository = {
             arch = "rockspec"
          }
       },
-      ["scm-1"] = {
+      ["0.1.1-1"] = {
          {
             arch = "rockspec"
          }
       },
-      ["scm-2"] = {
+      ["scm-3"] = {
          {
             arch = "rockspec"
          }
-      }
+      },
    },
    memcached = {
       ["1.0.0-1"] = {

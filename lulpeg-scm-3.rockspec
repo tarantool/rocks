@@ -2,14 +2,15 @@ package = "lulpeg"
 version = "scm-1"
 
 source = {
-  url = "git://github.com/pygy/LuLPeg",
+  url = "git://github.com/tarantool/LuLPeg",
+  branch = "master",
 }
 
 description = {
   summary     = "LuLPeg",
   detailed    = "LuLPeg, a pure Lua port of LPeg, Roberto Ierusalimschy's Parsing Expression Grammars library. Copyright (C) Pierre-Yves Gerardy.",
   license     = "The Romantic WTF public license",
-  maintainer  = "pygy",
+  maintainer  = "Tarantool Authors",
 }
 
 dependencies = {
@@ -17,12 +18,11 @@ dependencies = {
 }
 
 build = {
-  type    = "command",
-  build_command = "scripts/make.sh",
+  type = "command",
+  build_command = "cd src; tarantool ../scripts/pack.lua > ../lulpeg.lua",
   install = {
     lua = {
       ["lulpeg"] = "lulpeg.lua",
     }
   }
 }
-
