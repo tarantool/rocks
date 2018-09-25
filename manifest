@@ -280,6 +280,13 @@ repository = {
          }
       }
    },
+   jsonpath = {
+      ["1.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    ldecnumber = {
       ["1.0.0-1"] = {
          {
@@ -338,7 +345,7 @@ repository = {
          {
             arch = "rockspec"
          }
-      },
+      }
    },
    memcached = {
       ["1.0.0-1"] = {
