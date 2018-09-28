@@ -621,5 +621,12 @@ repository = {
             arch = "rockspec"
          }
       }
-   }
+   },
+   synchronized = {
+      ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
 }
