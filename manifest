@@ -606,6 +606,13 @@ repository = {
          }
       }
    },
+   template = {
+      ["2.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    tradeparser = {
       ["scm-1"] = {
          {
