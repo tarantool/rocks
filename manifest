@@ -13,6 +13,11 @@ repository = {
          {
             arch = "rockspec"
          }
+      },
+      ["0.6.0-1"] = {
+         {
+            arch = "rockspec"
+         }
       }
    },
    authman = {
@@ -372,6 +377,27 @@ repository = {
    },
    ["lua-term"] = {
       ["0.7-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
+   luacov = {
+      ["0.13.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
+   ["luacov-console"] = {
+      ["1.1.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
+   luafilesystem = {
+      ["1.7.0-2"] = {
          {
             arch = "rockspec"
          }
