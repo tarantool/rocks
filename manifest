@@ -644,6 +644,13 @@ repository = {
          }
       }
    },
+   ["tnt-kafka"] = {
+      ["0.4.1-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    tradeparser = {
       ["scm-1"] = {
          {
