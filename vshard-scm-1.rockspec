@@ -12,6 +12,11 @@ description = {
 dependencies = {
     'tarantool >= 1.9.0';
 }
+external_dependencies = {
+    TARANTOOL = {
+        header = 'tarantool/module.h';
+    };
+}
 build = {
     type = 'cmake';
     variables = {
