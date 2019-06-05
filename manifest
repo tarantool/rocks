@@ -397,6 +397,13 @@ repository = {
          }
       }
    },
+   luacheck = {
+      ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    luacov = {
       ["0.13.0-1"] = {
          {
