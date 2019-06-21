@@ -18,5 +18,13 @@ build = {
         CMAKE_BUILD_TYPE="RelWithDebInfo";
         TARANTOOL_INSTALL_LIBDIR="$(LIBDIR)";
         TARANTOOL_INSTALL_LUADIR="$(LUADIR)";
+        STATIC_BUILD="$(STATIC_BUILD)";
+    };
+    platforms = {
+        macosx = {
+            variables = {
+                OPENSSL_ROOT_DIR="/usr/local/opt/openssl";
+            };
+        };
     };
 }
