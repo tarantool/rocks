@@ -1,8 +1,8 @@
 package = 'luatest'
-version = 'scm-1'
+version = '0.2.0-1'
 source = {
     url = 'git://github.com/tarantool/luatest.git',
-    branch = 'master',
+    tag = '0.2.0',
 }
 description = {
     summary = 'Tool for testing tarantool applications',
