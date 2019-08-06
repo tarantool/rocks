@@ -848,6 +848,11 @@ repository = {
          {
             arch = "rockspec"
          }
+      },
+      ["0.0.2-1"] = {
+         {
+            arch = "rockspec"
+         }
       }
    },
    zookeeper = {
