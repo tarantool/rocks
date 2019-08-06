@@ -425,6 +425,11 @@ repository = {
       }
    },
    luacheck = {
+      ["0.23.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
