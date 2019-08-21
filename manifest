@@ -225,6 +225,18 @@ repository = {
          }
       }
    },
+   errors = {
+      ["2.1.1-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
+      ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    expirationd = {
       ["1.0.1-1"] = {
          {
