@@ -520,6 +520,13 @@ repository = {
          }
       }
    },
+   membership = {
+      ["2.1.3-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    memcached = {
       ["1.0.0-1"] = {
          {
