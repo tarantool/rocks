@@ -2,7 +2,7 @@ package = 'membership'
 version = '2.1.3-1'
 source  = {
     url = 'git+https://github.com/tarantool/membership.git',
-    branch = 'master',
+    tag = '2.1.3',
 }
 
 description = {
