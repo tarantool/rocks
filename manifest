@@ -249,6 +249,13 @@ repository = {
          }
       }
    },
+   ["frontend-core"] = {
+      ["5.0.2-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    gis = {
       ["1.0.0-1"] = {
          {
