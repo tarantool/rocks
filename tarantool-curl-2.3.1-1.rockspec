@@ -2,7 +2,7 @@ package = 'tarantool-curl'
 version = '2.3.1-1'
 
 source  = {
-    url = 'git://github.com/tarantool/curl.git';
+    url = 'git://github.com/tarantool/tarantool-curl.git';
     tag = '2.3.1';
 }
 
@@ -11,7 +11,7 @@ description = {
     detailed = [[
     This module is a set of bindings for libcurl that allows you to use most of standard HTTP client functions.
     ]];
-    homepage = 'https://github.com/tarantool/curl.git';
+    homepage = 'https://github.com/tarantool/tarantool-curl.git';
     license  = 'BSD';
     maintainer = "Konstantin Nazarov <racktear@tarantool.org>";
 }
