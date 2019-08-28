@@ -111,6 +111,13 @@ repository = {
          }
       }
    },
+   ["cartridge-cli"] = {
+      ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    cbench = {
       ["scm-1"] = {
          {
