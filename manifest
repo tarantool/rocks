@@ -105,6 +105,14 @@ repository = {
       }
    },
    cartridge = {
+      ["1.0.0-1"] = {
+         {
+            arch = "all"
+         },
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
@@ -270,6 +278,9 @@ repository = {
          }
       },
       ["6.0.1-1"] = {
+         {
+            arch = "all"
+         },
          {
             arch = "rockspec"
          }
