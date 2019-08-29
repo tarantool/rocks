@@ -268,6 +268,11 @@ repository = {
          {
             arch = "rockspec"
          }
+      },
+      ["6.0.1-1"] = {
+         {
+            arch = "rockspec"
+         }
       }
    },
    gis = {
