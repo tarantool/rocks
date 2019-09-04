@@ -120,6 +120,11 @@ repository = {
       }
    },
    ["cartridge-cli"] = {
+      ["1.0.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
@@ -279,10 +284,10 @@ repository = {
       },
       ["6.0.1-1"] = {
          {
-            arch = "rockspec"
+            arch = "all"
          },
          {
-            arch = "all"
+            arch = "rockspec"
          }
       },
       ["6.0.2-1"] = {
