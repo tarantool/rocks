@@ -1,8 +1,8 @@
 package = 'luatest'
-version = '0.2.1-1'
+version = '0.2.2-1'
 source = {
     url = 'git://github.com/tarantool/luatest.git',
-    tag = '0.2.1',
+    tag = '0.2.2',
 }
 description = {
     summary = 'Tool for testing tarantool applications',

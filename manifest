@@ -542,7 +542,7 @@ repository = {
             arch = "rockspec"
          }
       },
-      ["0.2.1-1"] = {
+      ["0.2.2-1"] = {
          {
             arch = "rockspec"
          }
