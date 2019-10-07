@@ -1,8 +1,8 @@
 package = 'http'
-version = 'scm-1'
+version = '2.0.0-1'
 source  = {
-    url    = 'git://github.com/tarantool/http.git',
-    branch = 'master',
+    url = 'git+https://github.com/tarantool/http.git',
+    tag = '2.0.0',
 }
 description = {
     summary  = "HTTP server for Tarantool",
