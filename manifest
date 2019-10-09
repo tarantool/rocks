@@ -292,10 +292,10 @@ repository = {
       },
       ["6.0.1-1"] = {
          {
-            arch = "all"
+            arch = "rockspec"
          },
          {
-            arch = "rockspec"
+            arch = "all"
          }
       },
       ["6.0.2-1"] = {
@@ -380,6 +380,11 @@ repository = {
          }
       },
       ["2.0.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
+      ["2.0.1-1"] = {
          {
             arch = "rockspec"
          }
