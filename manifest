@@ -292,10 +292,10 @@ repository = {
       },
       ["6.0.1-1"] = {
          {
-            arch = "rockspec"
+            arch = "all"
          },
          {
-            arch = "all"
+            arch = "rockspec"
          }
       },
       ["6.0.2-1"] = {
@@ -539,6 +539,11 @@ repository = {
    },
    luarapidxml = {
       ["1.1.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
+      ["2.0.0-1"] = {
          {
             arch = "rockspec"
          }
