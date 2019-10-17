@@ -1,7 +1,7 @@
 package = "luacheck"
 version = "scm-1"
 source = {
-   url = "git+https://github.com/mpeterv/luacheck.git"
+   url = "git+https://github.com/tarantool/luacheck.git"
 }
 description = {
    summary = "A static analyzer and a linter for Lua",
@@ -10,13 +10,12 @@ Luacheck is a command-line tool for linting and static analysis of Lua code.
 It is able to spot usage of undefined global variables, unused local variables and
 a few other typical problems within Lua programs.
 ]],
-   homepage = "https://github.com/mpeterv/luacheck",
+   homepage = "https://github.com/tarantool/luacheck",
    license = "MIT"
 }
 dependencies = {
    "lua >= 5.1, < 5.4",
    "argparse >= 0.6.0",
-   "luafilesystem >= 1.6.3"
 }
 build = {
    type = "builtin",
@@ -35,6 +34,7 @@ build = {
       ["luacheck.filter"] = "src/luacheck/filter.lua",
       ["luacheck.format"] = "src/luacheck/format.lua",
       ["luacheck.fs"] = "src/luacheck/fs.lua",
+      ["luacheck.fs_adapter"] = "src/luacheck/fs_adapter.lua",
       ["luacheck.globbing"] = "src/luacheck/globbing.lua",
       ["luacheck.lexer"] = "src/luacheck/lexer.lua",
       ["luacheck.main"] = "src/luacheck/main.lua",
@@ -72,7 +72,7 @@ build = {
       ["luacheck.vendor.sha1.common"] = "src/luacheck/vendor/sha1/common.lua",
       ["luacheck.vendor.sha1.lua53_ops"] = "src/luacheck/vendor/sha1/lua53_ops.lua",
       ["luacheck.vendor.sha1.pure_lua_ops"] = "src/luacheck/vendor/sha1/pure_lua_ops.lua",
-      ["luacheck.version"] = "src/luacheck/version.lua",
+      ["luacheck.version"] = "src/luacheck/version.lua"
    },
    install = {
       bin = {

@@ -1,8 +1,8 @@
 package = "luacheck"
-version = "0.23.0-1"
+version = "0.24.0-1"
 source = {
    url = "git+https://github.com/tarantool/luacheck.git",
-   tag = "0.23.0",
+   tag = "0.24.0",
 }
 description = {
    summary = "A static analyzer and a linter for Lua",
@@ -17,7 +17,6 @@ a few other typical problems within Lua programs.
 dependencies = {
    "lua >= 5.1, < 5.4",
    "argparse >= 0.6.0",
-   "luafilesystem >= 1.6.3"
 }
 build = {
    type = "builtin",
@@ -36,6 +35,7 @@ build = {
       ["luacheck.filter"] = "src/luacheck/filter.lua",
       ["luacheck.format"] = "src/luacheck/format.lua",
       ["luacheck.fs"] = "src/luacheck/fs.lua",
+      ["luacheck.fs_adapter"] = "src/luacheck/fs_adapter.lua",
       ["luacheck.globbing"] = "src/luacheck/globbing.lua",
       ["luacheck.lexer"] = "src/luacheck/lexer.lua",
       ["luacheck.main"] = "src/luacheck/main.lua",
