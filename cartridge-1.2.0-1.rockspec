@@ -1,8 +1,8 @@
 package = 'cartridge'
-version = 'scm-1'
+version = '1.2.0-1'
 source  = {
     url = 'git+https://github.com/tarantool/cartridge.git',
-    branch = 'master',
+    tag = '1.2.0',
 }
 dependencies = {
     'lua >= 5.1',
