@@ -515,6 +515,11 @@ repository = {
       }
    },
    luacheck = {
+      ["0.24.0-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["0.25.0-1"] = {
          {
             arch = "rockspec"
@@ -571,6 +576,11 @@ repository = {
          }
       },
       ["0.2.2-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
+      ["0.3.0-1"] = {
          {
             arch = "rockspec"
          }
