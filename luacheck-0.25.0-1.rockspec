@@ -1,7 +1,8 @@
 package = "luacheck"
-version = "scm-1"
+version = "0.25.0-1"
 source = {
-   url = "git+https://github.com/tarantool/luacheck.git"
+   url = "git+https://github.com/tarantool/luacheck.git",
+   tag = "0.25.0",
 }
 description = {
    summary = "A static analyzer and a linter for Lua",
