@@ -115,6 +115,14 @@ repository = {
       },
       ["1.1.0-1"] = {
          {
+            arch = "rockspec"
+         },
+         {
+            arch = "all"
+         }
+      },
+      ["1.2.0-1"] = {
+         {
             arch = "all"
          },
          {
