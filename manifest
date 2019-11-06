@@ -917,6 +917,18 @@ repository = {
          }
       }
    },
+   tracing = {
+      ["0.1.1-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
+      ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    tradeparser = {
       ["scm-1"] = {
          {
