@@ -112,18 +112,18 @@ repository = {
    cartridge = {
       ["1.0.0-1"] = {
          {
-            arch = "all"
+            arch = "rockspec"
          },
          {
-            arch = "rockspec"
+            arch = "all"
          }
       },
       ["1.1.0-1"] = {
          {
-            arch = "all"
+            arch = "rockspec"
          },
          {
-            arch = "rockspec"
+            arch = "all"
          }
       },
       ["1.2.0-1"] = {
@@ -254,6 +254,13 @@ repository = {
          }
       }
    },
+   ddl = {
+      ["scm-1"] = {
+         {
+            arch = "rockspec"
+         }
+      }
+   },
    document = {
       ["1.0.0-1"] = {
          {
@@ -310,10 +317,10 @@ repository = {
       },
       ["6.0.1-1"] = {
          {
-            arch = "rockspec"
+            arch = "all"
          },
          {
-            arch = "all"
+            arch = "rockspec"
          }
       },
       ["6.0.2-1"] = {
