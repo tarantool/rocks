@@ -255,6 +255,11 @@ repository = {
       }
    },
    ddl = {
+      ["0.0.1-1"] = {
+         {
+            arch = "rockspec"
+         }
+      },
       ["scm-1"] = {
          {
             arch = "rockspec"
