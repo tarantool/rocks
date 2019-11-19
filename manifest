@@ -335,6 +335,11 @@ repository = {
          {
             arch = "all"
          }
+      },
+      ["6.2.0-1"] = {
+         {
+            arch = "all"
+         }
       }
    },
    gis = {
