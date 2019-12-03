@@ -1,6 +1,7 @@
-<a href="http://tarantool.org">
-	<img src="https://avatars2.githubusercontent.com/u/2344919?v=2&s=250" align="right">
-</a>
+# The repository is archived
+
+We changed the way to manage rocks. Please, proceed to
+[https://github.com/tarantool/rocks.tarantool.org](https://github.com/tarantool/rocks.tarantool.org).
 
 # Tarantool Rocks - a package repository for Tarantool 1.6+
 
